@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+ 
+</head>
+<body>
+    <div class = question>
+        <button onclick="test()">문제 1</button>
+        <p id="test_obj"></p>
+         
+        <script>
+            var i = 0;
+            var txt = '첫문제는 방탈출식으로 가볍게 시작합니다. 5 = 4, 7 = 5, 10 = 3 4 = 4 이라면 1 = ? 문제 2번도 Ctrl + U 로 링크 확인';
+            var speed = 100;
+         
+            function test() {
+                if (i < txt.length) {
+                    document.getElementById("test_obj").innerHTML += txt.charAt(i); //    https://ihanpark.github.io/p3/
+                    i++;
+                    setTimeout(test, speed);
+                }
+            }
+        </script>
+    </div>
+</body>
